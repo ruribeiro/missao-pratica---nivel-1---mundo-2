@@ -1,0 +1,62 @@
+/* formatos.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #63e982;
+}
+
+
+
+header {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: #ddd;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ddd;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, nav, footer {
+    flex-shrink: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    position: static;
+}
